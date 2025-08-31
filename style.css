@@ -1,127 +1,136 @@
-/* General Reset */
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: #f8f9fc;
-  color: #333;
+  background: #f5f8ff; /* light bluish background */
+  color: #333333;
   line-height: 1.6;
 }
 
 /* Container */
 .container {
   width: 85%;
-  max-width: 1000px;
-  margin: auto;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 2rem 0;
 }
 
 /* Header */
 header {
-  background: linear-gradient(90deg, #0077ff, #ff5ca2);
-  color: #fff;
-  padding: 2rem 0;
-  text-align: center;
-  border-bottom: 4px solid #eaeaea;
+  background: linear-gradient(90deg, #007bff, #ff4da6);
+  color: white;
+  text-align: left;
+  padding: 3rem 2rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-.tagline {
-  font-size: 1.1rem;
-  font-weight: 300;
+header .tagline {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  opacity: 0.9;
 }
 
-/* Navigation */
 nav ul {
   list-style: none;
-  margin-top: 1rem;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-nav a {
+nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-weight: bold;
   transition: color 0.3s;
 }
 
-nav a:hover {
+nav ul li a:hover {
   color: #ffe6f2;
 }
 
 /* Section Titles */
-section h2 {
-  text-align: center;
-  margin-bottom: 1.2rem;
-  color: #0077ff;
-  font-size: 1.8rem;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+  position: relative;
 }
 
-/* About */
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ff4da6;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+/* About Section */
 #about p {
-  text-align: justify;
   font-size: 1.1rem;
-  padding: 0 1rem;
+  margin-top: 1rem;
 }
 
-/* Projects */
+/* Projects Section */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .project-card {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 16px rgba(0,0,0,0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.25);
 }
 
 .project-card h3 {
-  color: #ff5ca2;
-  margin-bottom: 0.6rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
 }
 
 .project-card p {
-  font-size: 0.95rem;
   margin-bottom: 1rem;
 }
 
-/* Buttons */
-.btn {
+.project-card .btn {
   display: inline-block;
-  background: #0077ff;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
+  background: #ff4da6;
+  color: white;
   text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
   transition: background 0.3s;
 }
 
-.btn:hover {
-  background: #005fcc;
+.project-card .btn:hover {
+  background: #e60073;
 }
 
-/* Contact */
+/* Contact Section */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -133,19 +142,32 @@ section h2 {
 .contact-form textarea {
   padding: 0.8rem;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 1rem;
 }
 
 .contact-form button {
+  background: #007bff;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
 }
 
 /* Footer */
 footer {
+  background: #f0f4ff;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 1.5rem;
   margin-top: 2rem;
-  background: #f1f1f1;
+  border-top: 2px solid #e6e6e6;
   font-size: 0.9rem;
+  color: #555;
 }
