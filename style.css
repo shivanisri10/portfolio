@@ -1,65 +1,60 @@
-/* General Styling */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background: #fff0f6;
-  color: #333;
+  font-family: 'Fira Code', monospace;
+  background: #0a0a0a;
+  color: #e0e0e0;
   line-height: 1.6;
 }
 
 /* Header */
 header {
-  background: #ffb6c1;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-}
-
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: #111;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid #0ff;
 }
 
 header h1 {
-  font-size: 1.8rem;
-  color: white;
+  font-size: 2.5rem;
+  color: #0ff;
 }
 
-header ul {
-  display: flex;
-  list-style: none;
+.tagline {
+  margin: 0.5rem 0;
+  font-style: italic;
 }
 
-header ul li {
-  margin-left: 20px;
+nav {
+  margin-top: 1rem;
 }
 
-header ul li a {
+nav a {
+  margin: 0 1rem;
+  color: #0ff;
   text-decoration: none;
-  color: white;
   font-weight: bold;
 }
 
-header ul li a:hover {
-  color: #ffe4e1;
+nav a:hover {
+  color: #fff;
 }
 
 /* Sections */
 .section {
-  padding: 3rem 2rem;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
-h2 {
+.section h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #d63384;
+  margin-bottom: 1.5rem;
+  color: #0ff;
 }
 
 /* Projects */
@@ -67,68 +62,63 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
 }
 
-.card {
-  background: white;
+.project-card {
+  background: #111;
   padding: 1.5rem;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  border: 2px solid #0ff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #0ff5;
 }
 
-.card h3 {
-  margin-bottom: 1rem;
-  color: #ff69b4;
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: #0ff;
 }
 
-.card a {
+.btn {
   display: inline-block;
   margin-top: 1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #0ff;
+  color: #000;
+  font-weight: bold;
   text-decoration: none;
-  background: #ff69b4;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
+  transition: 0.3s;
 }
 
-.card a:hover {
-  background: #d63384;
+.btn:hover {
+  background: #fff;
 }
 
 /* Contact */
 form {
-  max-width: 400px;
-  margin: auto;
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  margin: auto;
 }
 
-form input, form textarea {
-  margin-bottom: 1rem;
+form input,
+form textarea {
+  margin: 0.5rem 0;
   padding: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  border: 1px solid #0ff;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
 }
 
 form button {
-  background: #ff69b4;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-form button:hover {
-  background: #d63384;
+  margin-top: 1rem;
 }
 
 /* Footer */
 footer {
-  background: #ffb6c1;
-  padding: 1rem;
+  background: #111;
   text-align: center;
-  color: white;
+  padding: 1rem;
+  border-top: 2px solid #0ff;
 }
