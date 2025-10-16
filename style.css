@@ -26,7 +26,7 @@ header {
   background: linear-gradient(90deg, #007bff, #ff4da6);
   color: white;
   text-align: left;
-  padding: 3rem 2rem;
+  padding: 1.5rem 2rem;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   position: sticky;
@@ -35,13 +35,13 @@ header {
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 header .tagline {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.3rem;
   font-style: italic;
   opacity: 0.9;
 }
@@ -50,7 +50,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   flex-wrap: wrap;
 }
 
