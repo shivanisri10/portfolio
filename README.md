@@ -10,23 +10,13 @@ The goal of this project is to create a **personal portfolio website** to showca
 
 ## Steps to Run the Project
 Clone the repository:
-
 git clone https://github.com/shivanisri10/portfolio.git
 
 Navigate to the project folder:
 cd portfolio
 
-Demo
-Live Website: https://animated-shortbread-f30ea9.netlify.app/
-
-Deployment Link
+### Deployment Link
 Netlify Live Site: https://animated-shortbread-f30ea9.netlify.app/
 
-Repository Link
+### Repository Link
 GitHub Repository: https://github.com/shivanisri10/portfolio/tree/main
-
-Project Organization
-portfolio/
-├── index.html
-├── style.css
-└── README.md
