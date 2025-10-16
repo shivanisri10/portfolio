@@ -1,4 +1,7 @@
-/* Reset and Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +10,11 @@
 }
 
 body {
-  background: #f5f8ff; /* light bluish background */
-  color: #333333;
+  background: #f5f8ff;
+  color: #333;
   line-height: 1.6;
 }
 
-/* Container */
 .container {
   width: 85%;
   max-width: 1100px;
@@ -20,7 +22,6 @@ body {
   padding: 2rem 0;
 }
 
-/* Header */
 header {
   background: linear-gradient(90deg, #007bff, #ff4da6);
   color: white;
@@ -28,6 +29,9 @@ header {
   padding: 3rem 2rem;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
@@ -47,6 +51,7 @@ nav ul {
   display: flex;
   gap: 1.5rem;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -60,7 +65,6 @@ nav ul li a:hover {
   color: #ffe6f2;
 }
 
-/* Section Titles */
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -78,13 +82,11 @@ h2::after {
   border-radius: 5px;
 }
 
-/* About Section */
 #about p {
   font-size: 1.1rem;
   margin-top: 1rem;
 }
 
-/* Projects Section */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -130,7 +132,6 @@ h2::after {
   background: #e60073;
 }
 
-/* Contact Section */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -161,7 +162,6 @@ h2::after {
   background: #0056b3;
 }
 
-/* Footer */
 footer {
   background: #f0f4ff;
   text-align: center;
