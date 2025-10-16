@@ -9,10 +9,10 @@ The goal of this project is to create a **personal portfolio website** to showca
 - **Netlify** – Deployment of the live website  
 
 ## Steps to Run the Project
-Clone the repository:
+- Clone the repository:
 git clone https://github.com/shivanisri10/portfolio.git
 
-Navigate to the project folder:
+- Navigate to the project folder:
 cd portfolio
 
 ### Deployment Link
